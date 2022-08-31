@@ -5,13 +5,15 @@ export const CardContainer = styled.article`
   justify-content: center;
   align-items: flex-end;
   position: relative;
+  cursor: pointer;
 
   img {
-    height: 13rem;
-    width: 20rem;
+    height: 12rem;
+    width: 16rem;
+    border-left: 0.5rem solid orange;
+    border-bottom: 0.5rem solid orange;
     border-radius: 2rem;
     position: relative;
-    box-shadow: 1px 2px 7px black;
   }
 
   p {

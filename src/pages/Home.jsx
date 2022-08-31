@@ -1,12 +1,13 @@
 import Trending from "../components/Trending";
 import Specials from "../components/Specials";
+import { HomeContainer } from "../styles/StyledHome";
 
 function Home() {
   return (
-    <main>
+    <HomeContainer>
       <Specials />
       <Trending />
-    </main>
+    </HomeContainer>
   );
 }
 

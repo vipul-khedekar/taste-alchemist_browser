@@ -11,12 +11,11 @@ export const Header = styled.div`
 `;
 
 export const ScrollArea = styled.section`
-  height: 17rem;
+  height: 14rem;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 2rem;
   padding: 3px;
-  margin: -0.5rem 0;
   overflow-x: scroll;
 `;
