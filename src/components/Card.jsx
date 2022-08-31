@@ -1,7 +1,15 @@
-function Card(props) {
-  const { id, title } = props.recipe;
+import { CardContainer, Gradient } from "../styles/StyledCard";
 
-  return <div key={id}>{title}</div>;
+function Card(props) {
+  const { id, title, image } = props.recipe;
+
+  return (
+    <CardContainer key={id}>
+      <p>{title}</p>
+      <Gradient />
+      <img src={image} alt={title} />
+    </CardContainer>
+  );
 }
 
 export default Card;

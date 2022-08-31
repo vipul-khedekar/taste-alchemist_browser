@@ -1,5 +1,10 @@
 import { useState, useEffect } from "react";
-import { Section, Header } from "../styles/StyledTrending";
+
+import {
+  TrendingContainer,
+  Header,
+  ScrollArea,
+} from "../styles/StyledTrending";
 
 import Card from "./Card";
 
@@ -22,12 +27,14 @@ function Trending() {
   console.log(trendingList);
 
   return (
-    <Section>
+    <TrendingContainer>
       <Header>Trending</Header>
-      {trendingList.map((recipe) => {
-        return <Card key={recipe.id} recipe={recipe} />;
-      })}
-    </Section>
+      <ScrollArea>
+        {trendingList.map((recipe) => {
+          return <Card key={recipe.id} recipe={recipe} />;
+        })}
+      </ScrollArea>
+    </TrendingContainer>
   );
 }
 
