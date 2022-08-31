@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const TrendingContainer = styled.section`
+export const SpecialsContainer = styled.section`
   padding: 1.5rem;
 `;
 
