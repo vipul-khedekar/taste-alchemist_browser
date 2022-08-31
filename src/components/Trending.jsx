@@ -12,19 +12,25 @@ function Trending() {
   const [trendingList, setTrendingList] = useState([]);
 
   async function getTrending() {
-    const response = await fetch(
-      `https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=10`,
-      { mode: `cors` }
-    );
-    const data = await response.json();
-    setTrendingList(data.recipes);
+    const cache = localStorage.getItem(`trending`);
+
+    if (cache) {
+      setTrendingList(JSON.parse(localStorage.getItem(`trending`)));
+    } else {
+      const response = await fetch(
+        `https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=10`,
+        { mode: `cors` }
+      );
+      const data = await response.json();
+
+      localStorage.setItem(`trending`, JSON.stringify(data.recipes));
+      setTrendingList(data.recipes);
+    }
   }
 
   useEffect(() => {
     getTrending();
   }, []);
-
-  console.log(trendingList);
 
   return (
     <TrendingContainer>
