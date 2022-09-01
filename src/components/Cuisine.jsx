@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
-import { motion } from "framer-motion";
 
 import { CuisineContainer } from "../styles/StyledCuisine";
 import Card from "./Card";
