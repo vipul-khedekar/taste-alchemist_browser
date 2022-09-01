@@ -12,7 +12,7 @@ function Cuisine() {
 
   async function getRecipes(cuisineType) {
     const response = await fetch(
-      `https://api.spoonacular.com/recipes/complexSearch?apiKey=${process.env.REACT_APP_API_KEY}&cuisine=${params.type}&limit=16`,
+      `https://api.spoonacular.com/recipes/complexSearch?apiKey=${process.env.REACT_APP_API_KEY}&cuisine=${cuisineType}&limit=16`,
       { mode: `cors` }
     );
     const data = await response.json();
@@ -29,7 +29,7 @@ function Cuisine() {
       {cuisine.map((recipe) => {
         return (
           <Link to={`/cuisine/${params.type}`}>
-            <Card key={recipe.id} recipe={recipe} />;
+            <Card key={recipe.id} recipe={recipe} />
           </Link>
         );
       })}

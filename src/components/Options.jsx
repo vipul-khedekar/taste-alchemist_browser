@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import {
   GiHamburger,
   GiNoodles,
-  GiChickenLeg,
+  GiPizzaSlice,
   GiMonsteraLeaf,
 } from "react-icons/gi";
 
@@ -11,17 +11,17 @@ import { OptionsContainer } from "../styles/StyledOptions";
 function Options() {
   return (
     <OptionsContainer>
-      <NavLink to={"/cuisine/japanese"}>
+      <NavLink to={"/cuisine/chinese"}>
         <GiNoodles />
-        <p>Japanese</p>
+        <p>Chinese</p>
       </NavLink>
-      <NavLink to={"/cuisine/mexican"}>
-        <GiChickenLeg />
-        <p>Mexican</p>
+      <NavLink to={"/cuisine/italian"}>
+        <GiPizzaSlice />
+        <p>Italian</p>
       </NavLink>
       <NavLink to={"/cuisine/indian"}>
         <GiMonsteraLeaf />
-        <p>South Indian</p>
+        <p>Indian</p>
       </NavLink>
       <NavLink to={"/cuisine/american"}>
         <GiHamburger />
