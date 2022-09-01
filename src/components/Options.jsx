@@ -4,13 +4,12 @@ import {
   GiNoodles,
   GiPizzaSlice,
   GiMonsteraLeaf,
-  GoHome,
 } from "react-icons/gi";
 import { FaHome } from "react-icons/fa";
 
 import {
   OptionsContainer,
-  NavLinkStyle,
+  NavLinkStyled,
   OptionsIcon,
   OptionsText,
 } from "../styles/StyledOptions";
@@ -18,26 +17,26 @@ import {
 function Options() {
   return (
     <OptionsContainer>
-      <NavLink to={"/"} style={NavLinkStyle}>
+      <NavLinkStyled to={"/"}>
         <FaHome style={OptionsIcon} />
         <p style={OptionsText}>Home</p>
-      </NavLink>
-      <NavLink to={"/cuisine/chinese"} style={NavLinkStyle}>
+      </NavLinkStyled>
+      <NavLinkStyled to={"/cuisine/chinese"}>
         <GiNoodles style={OptionsIcon} />
         <p style={OptionsText}>Chinese</p>
-      </NavLink>
-      <NavLink to={"/cuisine/italian"} style={NavLinkStyle}>
+      </NavLinkStyled>
+      <NavLinkStyled to={"/cuisine/italian"}>
         <GiPizzaSlice style={OptionsIcon} />
         <p style={OptionsText}>Italian</p>
-      </NavLink>
-      <NavLink to={"/cuisine/indian"} style={NavLinkStyle}>
+      </NavLinkStyled>
+      <NavLinkStyled to={"/cuisine/indian"}>
         <GiMonsteraLeaf style={OptionsIcon} />
         <p style={OptionsText}>Indian</p>
-      </NavLink>
-      <NavLink to={"/cuisine/american"} style={NavLinkStyle}>
+      </NavLinkStyled>
+      <NavLinkStyled to={"/cuisine/american"}>
         <GiHamburger style={OptionsIcon} />
         <p style={OptionsText}>American</p>
-      </NavLink>
+      </NavLinkStyled>
     </OptionsContainer>
   );
 }
