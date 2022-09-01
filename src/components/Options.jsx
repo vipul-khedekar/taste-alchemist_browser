@@ -4,7 +4,9 @@ import {
   GiNoodles,
   GiPizzaSlice,
   GiMonsteraLeaf,
+  GoHome,
 } from "react-icons/gi";
+import { FaHome } from "react-icons/fa";
 
 import {
   OptionsContainer,
@@ -16,6 +18,10 @@ import {
 function Options() {
   return (
     <OptionsContainer>
+      <NavLink to={"/"} style={NavLinkStyle}>
+        <FaHome style={OptionsIcon} />
+        <p style={OptionsText}>Home</p>
+      </NavLink>
       <NavLink to={"/cuisine/chinese"} style={NavLinkStyle}>
         <GiNoodles style={OptionsIcon} />
         <p style={OptionsText}>Chinese</p>
