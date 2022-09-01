@@ -6,26 +6,31 @@ import {
   GiMonsteraLeaf,
 } from "react-icons/gi";
 
-import { OptionsContainer } from "../styles/StyledOptions";
+import {
+  OptionsContainer,
+  NavLinkStyle,
+  OptionsIcon,
+  OptionsText,
+} from "../styles/StyledOptions";
 
 function Options() {
   return (
     <OptionsContainer>
-      <NavLink to={"/cuisine/chinese"}>
-        <GiNoodles />
-        <p>Chinese</p>
+      <NavLink to={"/cuisine/chinese"} style={NavLinkStyle}>
+        <GiNoodles style={OptionsIcon} />
+        <p style={OptionsText}>Chinese</p>
       </NavLink>
-      <NavLink to={"/cuisine/italian"}>
-        <GiPizzaSlice />
-        <p>Italian</p>
+      <NavLink to={"/cuisine/italian"} style={NavLinkStyle}>
+        <GiPizzaSlice style={OptionsIcon} />
+        <p style={OptionsText}>Italian</p>
       </NavLink>
-      <NavLink to={"/cuisine/indian"}>
-        <GiMonsteraLeaf />
-        <p>Indian</p>
+      <NavLink to={"/cuisine/indian"} style={NavLinkStyle}>
+        <GiMonsteraLeaf style={OptionsIcon} />
+        <p style={OptionsText}>Indian</p>
       </NavLink>
-      <NavLink to={"/cuisine/american"}>
-        <GiHamburger />
-        <p>American</p>
+      <NavLink to={"/cuisine/american"} style={NavLinkStyle}>
+        <GiHamburger style={OptionsIcon} />
+        <p style={OptionsText}>American</p>
       </NavLink>
     </OptionsContainer>
   );
