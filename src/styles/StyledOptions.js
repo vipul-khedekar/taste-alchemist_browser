@@ -9,21 +9,8 @@ export const OptionsContainer = styled.ul`
   margin: 1.5rem 0;
 `;
 
-export const NavLinkStyle = {
-  backgroundColor: `pink`,
-  height: `5.5rem`,
-  width: `5.5rem`,
-  display: `flex`,
-  flexDirection: `column`,
-  justifyContent: `center`,
-  alignItems: `center`,
-  gap: `0.6rem`,
-  borderRadius: `0.8rem`,
-  textDecoration: `none`,
-};
-
 export const NavLinkStyled = styled(NavLink)`
-  background-color: pink;
+  background: linear-gradient(105deg, var(--darkPurple), var(--semiDarkPurple));
   height: 5.5rem;
   width: 5.5rem;
   display: flex;
@@ -35,16 +22,16 @@ export const NavLinkStyled = styled(NavLink)`
   text-decoration: none;
 
   &.active {
-    border: 3px solid green;
+    border: 3px solid var(--white);
   }
 `;
 
 export const OptionsIcon = {
-  color: `white`,
+  color: `var(--white)`,
   fontSize: `2.5rem`,
 };
 
 export const OptionsText = {
-  color: `white`,
+  color: `var(--white)`,
   fontSize: `0.8rem`,
 };

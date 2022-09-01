@@ -1,25 +1,29 @@
 import styled from "styled-components";
 
 export const SearchContainer = styled.form`
-  background-color: green;
-  height: 3.5rem;
+  height: 4rem;
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 2rem 0;
 
   div {
     position: relative;
   }
 
   input {
-    height: 2rem;
+    background: linear-gradient(
+      to right,
+      var(--darkPurple),
+      var(--semiDarkPurple)
+    );
+    height: 2.5rem;
     width: 25rem;
-    border: 1px solid white;
+    border: none;
     border-radius: 5px;
     padding: 3px;
-    padding-left: 2.5rem;
+    padding-left: 3rem;
+    color: var(--silver);
     font-size: 1.1rem;
     outline: none;
   }
@@ -27,7 +31,9 @@ export const SearchContainer = styled.form`
 
 export const SearchIcon = {
   position: `absolute`,
-  top: `20%`,
+  top: `25%`,
   left: `2%`,
-  fontSize: `1.1rem`,
+  color: `var(--lightOrange)`,
+  fontSize: `1.3rem`,
+  fontWeight: `900`,
 };

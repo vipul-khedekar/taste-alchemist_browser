@@ -10,8 +10,8 @@ export const CardContainer = styled.article`
   img {
     height: 12rem;
     width: 16rem;
-    border-left: 0.5rem solid orange;
-    border-bottom: 0.5rem solid orange;
+    border-left: 0.5rem solid var(--semiDarkPurple);
+    border-bottom: 0.5rem solid var(--darkPurple);
     border-radius: 2rem;
     position: relative;
   }
@@ -20,15 +20,15 @@ export const CardContainer = styled.article`
     padding: 14px;
     position: absolute;
     z-index: 3;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     font-weight: bold;
     text-align: center;
-    color: white;
+    color: var(--white);
   }
 `;
 
 export const Gradient = styled.div`
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+  background: linear-gradient(to bottom, #ffffff00, #00000050);
   position: absolute;
   z-index: 2;
   height: 100%;

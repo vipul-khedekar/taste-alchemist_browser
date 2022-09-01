@@ -2,11 +2,12 @@ import styled from "styled-components";
 
 export const SpecialsContainer = styled.section`
   padding: 1.5rem;
+  margin-top: -1rem;
 `;
 
 export const Header = styled.div`
   align-self: flex-start;
-  font-size: 1.3rem;
+  font-size: 1.05rem;
   font-weight: bold;
 `;
 

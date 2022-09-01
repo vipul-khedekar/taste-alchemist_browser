@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
-  background-color: lightsalmon;
   height: 3rem;
   display: flex;
   justify-content: center;
@@ -14,7 +13,7 @@ export const HeaderContainer = styled.header`
   }
 
   p {
-    color: #801d72;
+    color: var(--semiDarkPurple);
     font-weight: bold;
   }
 `;
