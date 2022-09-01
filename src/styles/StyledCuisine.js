@@ -1,8 +1,10 @@
 import styled from "styled-components";
 
 export const CuisineContainer = styled.div`
-  background-color: aliceblue;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  grid-gap: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin: 3rem 0;
 `;

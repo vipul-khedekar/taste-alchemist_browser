@@ -12,7 +12,7 @@ function Cuisine() {
 
   async function getRecipes(cuisineType) {
     const response = await fetch(
-      `https://api.spoonacular.com/recipes/complexSearch?apiKey=${process.env.REACT_APP_API_KEY}&cuisine=${cuisineType}&limit=16`,
+      `https://api.spoonacular.com/recipes/complexSearch?apiKey=${process.env.REACT_APP_API_KEY}&cuisine=${cuisineType}&limit=10`,
       { mode: `cors` }
     );
     const data = await response.json();
