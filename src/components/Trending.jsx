@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 import {
   TrendingContainer,
   Header,
   ScrollArea,
 } from "../styles/StyledTrending";
-
 import Card from "./Card";
 
 function Trending() {
@@ -37,7 +37,11 @@ function Trending() {
       <Header>Trending</Header>
       <ScrollArea>
         {trendingList.map((recipe) => {
-          return <Card key={recipe.id} recipe={recipe} />;
+          return (
+            <Link to={`/recipe/${recipe.id}`}>
+              <Card key={recipe.id} recipe={recipe} />
+            </Link>
+          );
         })}
       </ScrollArea>
     </TrendingContainer>

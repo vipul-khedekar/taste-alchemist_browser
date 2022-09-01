@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 import {
   SpecialsContainer,
   Header,
   ScrollArea,
 } from "../styles/StyledSpecials";
-
 import Card from "./Card";
 
 function Specials() {
@@ -37,7 +37,11 @@ function Specials() {
       <Header>Today's Special, try out now!</Header>
       <ScrollArea>
         {specialsList.map((recipe) => {
-          return <Card key={recipe.id} recipe={recipe} />;
+          return (
+            <Link to={`/recipe/${recipe.id}`}>
+              <Card key={recipe.id} recipe={recipe} />
+            </Link>
+          );
         })}
       </ScrollArea>
     </SpecialsContainer>
