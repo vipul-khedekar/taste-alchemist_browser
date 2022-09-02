@@ -26,7 +26,7 @@ function Searched() {
     <SearchedContainer>
       {searchedList.map((recipe) => {
         return (
-          <Link to={`/cuisine/${params.type}`}>
+          <Link to={`/recipe/${recipe.id}`}>
             <Card key={recipe.id} recipe={recipe} />
           </Link>
         );
