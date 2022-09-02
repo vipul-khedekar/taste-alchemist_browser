@@ -5,7 +5,7 @@ function Header() {
   return (
     <HeaderContainer>
       <img src={Logo} alt="logo" />
-      <p>Taste Alchemist</p>
+      <p>TasteAlchemist</p>
     </HeaderContainer>
   );
 }

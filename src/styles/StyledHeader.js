@@ -14,6 +14,7 @@ export const HeaderContainer = styled.header`
 
   p {
     color: var(--semiDarkPurple);
-    font-weight: bold;
+    font-family: var(--pacificoFont);
+    font-size: 1.7rem;
   }
 `;

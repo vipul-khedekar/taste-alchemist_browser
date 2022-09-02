@@ -5,6 +5,8 @@
     --orange: #f29b00;
     --semiDarkPurple: #800080;
     --darkPurple: #2e1831;
+    --poppinsFont: 'Poppins', sans-serif;
+    --pacificoFont: 'Pacifico', cursive;
 }
 
 * {
@@ -13,6 +15,7 @@
     margin: 0;
 }
 
-body {
+html, body {
     background-color: var(--lightOrange);
+    font-family: var(--poppinsFont);
 }
