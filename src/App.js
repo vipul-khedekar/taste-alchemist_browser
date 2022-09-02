@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 import Pages from "./pages/Pages";
 import Options from "./components/Options";
 import SearchBar from "./components/SearchBar";
@@ -5,12 +7,17 @@ import Header from "./components/Header";
 
 function App() {
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
+    >
       <Header />
       <SearchBar />
       <Options />
       <Pages />
-    </div>
+    </motion.div>
   );
 }
 

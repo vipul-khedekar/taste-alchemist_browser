@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const RecipeContainer = styled.article`
   display: flex;
@@ -8,7 +9,7 @@ export const RecipeContainer = styled.article`
   margin: 3rem 2rem;
 `;
 
-export const LeftPanel = styled.div`
+export const LeftPanel = styled(motion.div)`
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -54,7 +55,7 @@ export const Properties = styled.div`
   }
 `;
 
-export const RightPanel = styled.div`
+export const RightPanel = styled(motion.div)`
   display: flex;
   flex: 1;
   flex-direction: column;

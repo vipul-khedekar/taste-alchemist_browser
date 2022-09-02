@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
-export const CardContainer = styled.article`
+export const CardContainer = styled(motion.article)`
   display: flex;
   justify-content: center;
   align-items: flex-end;

@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
-export const SearchedContainer = styled.div`
+export const SearchedContainer = styled(motion.div)`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

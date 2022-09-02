@@ -39,7 +39,12 @@ function Recipe() {
 
   return (
     <RecipeContainer>
-      <LeftPanel>
+      <LeftPanel
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.5 }}
+      >
         <h3>{recipeInfo.title}</h3>
 
         <img src={recipeInfo.image} alt={recipeInfo.title} />
@@ -55,7 +60,12 @@ function Recipe() {
         <span dangerouslySetInnerHTML={{ __html: recipeInfo.summary }}></span>
       </LeftPanel>
 
-      <RightPanel>
+      <RightPanel
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.5 }}
+      >
         <Buttons>
           <button
             className={activeTab === `ingredients` ? `active` : ``}

@@ -24,7 +24,12 @@ function Cuisine() {
   }, [params.type]);
 
   return (
-    <CuisineContainer>
+    <CuisineContainer
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
+    >
       {cuisine.map((recipe) => {
         return (
           <Link to={`/recipe/${recipe.id}`}>
