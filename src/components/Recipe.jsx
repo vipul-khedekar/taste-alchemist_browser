@@ -12,7 +12,7 @@ import {
 
 function Recipe() {
   const [recipeInfo, setRecipeInfo] = useState({});
-  const [activeTab, setActiveTab] = useState(`instructions`);
+  const [activeTab, setActiveTab] = useState(`ingredients`);
 
   let params = useParams();
 
@@ -23,7 +23,6 @@ function Recipe() {
     );
     const data = await response.json();
     setRecipeInfo(data);
-    console.log(data);
   }
 
   function makeInstructionsActive() {
@@ -41,7 +40,7 @@ function Recipe() {
   return (
     <RecipeContainer>
       <LeftPanel>
-        <p>{recipeInfo.title}</p>
+        <h3>{recipeInfo.title}</h3>
 
         <img src={recipeInfo.image} alt={recipeInfo.title} />
 
@@ -53,18 +52,11 @@ function Recipe() {
         </Properties>
 
         <h4>Summary:</h4>
-        <p dangerouslySetInnerHTML={{ __html: recipeInfo.summary }}></p>
+        <span dangerouslySetInnerHTML={{ __html: recipeInfo.summary }}></span>
       </LeftPanel>
 
       <RightPanel>
         <Buttons>
-          <button
-            className={activeTab === `instructions` ? `active` : ``}
-            onClick={() => makeInstructionsActive()}
-          >
-            Instructions
-          </button>
-
           <button
             className={activeTab === `ingredients` ? `active` : ``}
             onClick={() => makeIngredientsActive()}
@@ -72,21 +64,28 @@ function Recipe() {
             Ingredients
           </button>
 
-          <Body>
-            {activeTab === `instructions` ? (
-              <p
-                dangerouslySetInnerHTML={{ __html: recipeInfo.instructions }}
-              ></p>
-            ) : (
-              <>
-                {recipeInfo.extendedIngredients &&
-                  recipeInfo.extendedIngredients.map((ingredient) => {
-                    return <p>{ingredient}</p>;
-                  })}
-              </>
-            )}
-          </Body>
+          <button
+            className={activeTab === `instructions` ? `active` : ``}
+            onClick={() => makeInstructionsActive()}
+          >
+            Instructions
+          </button>
         </Buttons>
+
+        <Body>
+          {activeTab === `ingredients` ? (
+            <ul>
+              {recipeInfo.extendedIngredients &&
+                recipeInfo.extendedIngredients.map((ingredient) => {
+                  return <li key={ingredient.id}>{ingredient.original}</li>;
+                })}
+            </ul>
+          ) : (
+            <p
+              dangerouslySetInnerHTML={{ __html: recipeInfo.instructions }}
+            ></p>
+          )}
+        </Body>
       </RightPanel>
     </RecipeContainer>
   );
