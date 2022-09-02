@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { AiOutlineDoubleRight } from "react-icons/ai";
 
 import {
   SpecialsContainer,
@@ -34,7 +35,14 @@ function Specials() {
 
   return (
     <SpecialsContainer>
-      <Header>Today's Special, try out now!</Header>
+      <Header>
+        <p>Today's Special, try out now!</p>
+        <div>
+          <p>Scroll</p>
+          <AiOutlineDoubleRight style={{ fontSize: `1.8rem` }} />
+        </div>
+      </Header>
+
       <ScrollArea>
         {specialsList.map((recipe) => {
           return (

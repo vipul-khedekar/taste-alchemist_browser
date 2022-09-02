@@ -6,9 +6,26 @@ export const SpecialsContainer = styled.section`
 `;
 
 export const Header = styled.div`
-  align-self: flex-start;
-  font-size: 1.05rem;
-  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  p {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      margin-right: -0.3rem;
+      font-size: 0.75rem;
+      font-weight: 400;
+    }
+  }
 `;
 
 export const ScrollArea = styled.section`

@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { AiOutlineDoubleRight } from "react-icons/ai";
 
 import {
   TrendingContainer,
@@ -34,7 +35,14 @@ function Trending() {
 
   return (
     <TrendingContainer>
-      <Header>Trending</Header>
+      <Header>
+        <p>Trending...</p>
+        <div>
+          <p>Scroll</p>
+          <AiOutlineDoubleRight style={{ fontSize: `1.8rem` }} />
+        </div>
+      </Header>
+
       <ScrollArea>
         {trendingList.map((recipe) => {
           return (
