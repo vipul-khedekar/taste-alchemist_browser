@@ -1,16 +1,15 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 
 import "./index.css";
 
 import App from "./App";
 
-const root = document.querySelector(`#root`);
+const root = ReactDOM.createRoot(document.querySelector(`#root`));
 
-ReactDOM.render(
+root.render(
   <BrowserRouter>
     <App />
-  </BrowserRouter>,
-  root
+  </BrowserRouter>
 );
