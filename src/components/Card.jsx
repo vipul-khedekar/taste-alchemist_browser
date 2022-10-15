@@ -12,7 +12,9 @@ function Card(props) {
       transition={{ duration: 0.2 }}
     >
       <p>{title}</p>
+
       <Gradient />
+
       <img src={image} alt={title} />
     </CardContainer>
   );

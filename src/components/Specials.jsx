@@ -39,6 +39,7 @@ function Specials() {
     <SpecialsContainer>
       <Header>
         <p>Today's Special, try out now!</p>
+
         <div>
           <p>Scroll</p>
           <AiOutlineDoubleRight style={{ fontSize: `1.8rem` }} />

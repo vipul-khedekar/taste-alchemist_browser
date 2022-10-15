@@ -39,6 +39,7 @@ function Trending() {
     <TrendingContainer>
       <Header>
         <p>Trending...</p>
+
         <div>
           <p>Scroll</p>
           <AiOutlineDoubleRight style={{ fontSize: `1.8rem` }} />

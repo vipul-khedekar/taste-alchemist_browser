@@ -20,18 +20,22 @@ function Options() {
         <FaHome style={OptionsIcon} />
         <p style={OptionsText}>Home</p>
       </NavLinkStyled>
+
       <NavLinkStyled to={"/cuisine/chinese"}>
         <GiNoodles style={OptionsIcon} />
         <p style={OptionsText}>Chinese</p>
       </NavLinkStyled>
+
       <NavLinkStyled to={"/cuisine/italian"}>
         <GiPizzaSlice style={OptionsIcon} />
         <p style={OptionsText}>Italian</p>
       </NavLinkStyled>
+
       <NavLinkStyled to={"/cuisine/indian"}>
         <GiMonsteraLeaf style={OptionsIcon} />
         <p style={OptionsText}>Indian</p>
       </NavLinkStyled>
+
       <NavLinkStyled to={"/cuisine/american"}>
         <GiHamburger style={OptionsIcon} />
         <p style={OptionsText}>American</p>
