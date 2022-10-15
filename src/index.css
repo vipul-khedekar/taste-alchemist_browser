@@ -1,9 +1,11 @@
 :root {
     --white: #ffffff;
     --silver: #c9c9c9;
-    --lightOrange: #f0e5a4;
+    --lightGreen: #b1e6cc;
+    --darkGreen: #73d673;
     --semiDarkPurple: #800080;
     --darkPurple: #2e1831;
+
     --poppinsFont: 'Poppins', sans-serif;
     --pacificoFont: 'Pacifico', cursive;
 }
@@ -15,6 +17,6 @@
 }
 
 html, body {
-    background-color: var(--lightOrange);
+    background: linear-gradient(300deg, var(--darkGreen), var(--lightGreen));
     font-family: var(--poppinsFont);
 }
