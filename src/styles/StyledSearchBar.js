@@ -31,9 +31,9 @@ export const SearchContainer = styled.form`
 
 export const SearchIcon = {
   position: `absolute`,
-  top: `25%`,
+  top: `20%`,
   left: `2%`,
-  color: `var(--lightOrange)`,
-  fontSize: `1.3rem`,
+  color: `var(--darkGreen)`,
+  fontSize: `1.5rem`,
   fontWeight: `900`,
 };

@@ -8,6 +8,10 @@ export const CardContainer = styled(motion.article)`
   position: relative;
   cursor: pointer;
 
+  &:hover {
+    filter: brightness(120%);
+  }
+
   img {
     height: 12rem;
     width: 16rem;
@@ -15,6 +19,7 @@ export const CardContainer = styled(motion.article)`
     border-bottom: 0.5rem solid var(--darkPurple);
     border-radius: 2rem;
     position: relative;
+    filter: brightness(95%);
   }
 
   p {

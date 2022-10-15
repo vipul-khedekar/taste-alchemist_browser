@@ -21,6 +21,15 @@ export const NavLinkStyled = styled(NavLink)`
   border-radius: 0.8rem;
   text-decoration: none;
 
+  &:hover {
+    scale: 105%;
+    filter: brightness(120%);
+  }
+
+  &:active {
+    scale: 95%;
+  }
+
   &.active {
     border: 3px solid var(--white);
   }
