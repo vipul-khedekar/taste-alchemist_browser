@@ -23,8 +23,8 @@ function SearchBar() {
         <BsSearch style={SearchIcon} />
         <input
           onChange={(e) => setSearchQuery(e.target.value)}
-          type="text"
           value={searchQuery}
+          type="text"
           placeholder="What would like to cook today?"
         />
       </div>

@@ -49,8 +49,8 @@ function Specials() {
       <ScrollArea>
         {specialsList.map((recipe) => {
           return (
-            <Link to={`/recipe/${recipe.id}`}>
-              <Card key={recipe.id} recipe={recipe} />
+            <Link key={recipe.id} to={`/recipe/${recipe.id}`}>
+              <Card recipe={recipe} />
             </Link>
           );
         })}
