@@ -10,14 +10,15 @@ function Searched() {
 
   const [searchedList, setSearchList] = useState([]);
 
-  async function getQueries(searchQuery) {
+  const getQueries = async (searchQuery) => {
     const response = await fetch(
       `https://api.spoonacular.com/recipes/complexSearch?apiKey=${process.env.REACT_APP_API_KEY}&query=${searchQuery}&limit=10`,
       { mode: `cors` }
     );
     const data = await response.json();
+
     setSearchList(data.results);
-  }
+  };
 
   useEffect(() => {
     getQueries(params.searchedQuery);

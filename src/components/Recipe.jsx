@@ -16,22 +16,23 @@ function Recipe() {
   const [recipeInfo, setRecipeInfo] = useState({});
   const [activeTab, setActiveTab] = useState(`ingredients`);
 
-  async function getRecipe() {
+  const getRecipe = async () => {
     const response = await fetch(
       `https://api.spoonacular.com/recipes/${params.id}/information/?apiKey=${process.env.REACT_APP_API_KEY}`,
       { mode: `cors` }
     );
     const data = await response.json();
+
     setRecipeInfo(data);
-  }
+  };
 
-  function makeInstructionsActive() {
+  const makeInstructionsActive = () => {
     setActiveTab(`instructions`);
-  }
+  };
 
-  function makeIngredientsActive() {
+  const makeIngredientsActive = () => {
     setActiveTab(`ingredients`);
-  }
+  };
 
   useEffect(() => {
     getRecipe();

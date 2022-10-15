@@ -9,11 +9,13 @@ function SearchBar() {
 
   const [searchQuery, setSearchQuery] = useState(``);
 
-  function handleSubmit(e) {
+  const handleSubmit = (e) => {
     e.preventDefault();
+
     navigateTo(`/search-result/${searchQuery}`);
+
     setSearchQuery(``);
-  }
+  };
 
   return (
     <SearchContainer onSubmit={(e) => handleSubmit(e)}>

@@ -13,7 +13,7 @@ import Card from "./Card";
 function Specials() {
   const [specialsList, setSpecialsList] = useState([]);
 
-  async function getSpecials() {
+  const getSpecials = async () => {
     const cache = localStorage.getItem(`specials`);
 
     if (cache) {
@@ -26,9 +26,10 @@ function Specials() {
       const data = await response.json();
 
       localStorage.setItem(`specials`, JSON.stringify(data.results));
+
       setSpecialsList(data.results);
     }
-  }
+  };
 
   useEffect(() => {
     getSpecials();

@@ -10,7 +10,7 @@ function Cuisine() {
 
   const [cuisine, setCuisine] = useState([]);
 
-  async function getRecipes(cuisineType) {
+  const getRecipes = async (cuisineType) => {
     const response = await fetch(
       `https://api.spoonacular.com/recipes/complexSearch?apiKey=${process.env.REACT_APP_API_KEY}&cuisine=${cuisineType}&limit=10`,
       { mode: `cors` }
@@ -18,7 +18,7 @@ function Cuisine() {
     const data = await response.json();
 
     setCuisine(data.results);
-  }
+  };
 
   useEffect(() => {
     getRecipes(params.type);

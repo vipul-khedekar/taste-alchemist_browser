@@ -13,7 +13,7 @@ import Card from "./Card";
 function Trending() {
   const [trendingList, setTrendingList] = useState([]);
 
-  async function getTrending() {
+  const getTrending = async () => {
     const cache = localStorage.getItem(`trending`);
 
     if (cache) {
@@ -26,9 +26,10 @@ function Trending() {
       const data = await response.json();
 
       localStorage.setItem(`trending`, JSON.stringify(data.recipes));
+
       setTrendingList(data.recipes);
     }
-  }
+  };
 
   useEffect(() => {
     getTrending();
