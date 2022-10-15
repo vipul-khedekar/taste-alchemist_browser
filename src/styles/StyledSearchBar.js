@@ -12,20 +12,20 @@ export const SearchContainer = styled.form`
   }
 
   input {
+    height: 2.5rem;
+    width: 25rem;
     background: linear-gradient(
       to right,
       var(--darkPurple),
       var(--semiDarkPurple)
     );
-    height: 2.5rem;
-    width: 25rem;
-    border: none;
-    border-radius: 5px;
     padding: 3px;
     padding-left: 3rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
     color: var(--silver);
     font-size: 1.1rem;
-    outline: none;
   }
 `;
 

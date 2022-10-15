@@ -48,8 +48,8 @@ export const Properties = styled.div`
     display: flex;
     align-items: center;
     gap: 1rem;
-    border-radius: 0.8rem;
     padding: 0.5rem;
+    border-radius: 0.8rem;
     color: var(--white);
     font-size: 1rem;
   }
@@ -71,9 +71,9 @@ export const Buttons = styled.div`
 
   button {
     background-color: var(--semiDarkPurple);
+    padding: 0.7rem;
     border: transparent;
     border-radius: 0.8rem;
-    padding: 0.7rem;
     color: var(--white);
     font-size: 1.1rem;
     cursor: pointer;

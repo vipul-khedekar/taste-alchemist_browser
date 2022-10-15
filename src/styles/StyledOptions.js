@@ -10,9 +10,9 @@ export const OptionsContainer = styled.ul`
 `;
 
 export const NavLinkStyled = styled(NavLink)`
-  background: linear-gradient(105deg, var(--darkPurple), var(--semiDarkPurple));
   height: 5.5rem;
   width: 5.5rem;
+  background: linear-gradient(105deg, var(--darkPurple), var(--semiDarkPurple));
   display: flex;
   flex-direction: column;
   justify-content: center;

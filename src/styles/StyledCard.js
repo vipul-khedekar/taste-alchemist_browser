@@ -21,18 +21,18 @@ export const CardContainer = styled(motion.article)`
     padding: 14px;
     position: absolute;
     z-index: 3;
+    color: var(--white);
     font-size: 0.85rem;
     font-weight: bold;
     text-align: center;
-    color: var(--white);
   }
 `;
 
 export const Gradient = styled.div`
-  background: linear-gradient(to bottom, #ffffff00, #00000050);
-  position: absolute;
-  z-index: 2;
   height: 100%;
   width: 100%;
+  background: linear-gradient(to bottom, #ffffff00, #00000050);
   border-radius: 2rem;
+  position: absolute;
+  z-index: 2;
 `;
