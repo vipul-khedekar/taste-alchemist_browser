@@ -11,10 +11,10 @@ import {
 } from "../styles/StyledRecipe";
 
 function Recipe() {
+  let params = useParams();
+
   const [recipeInfo, setRecipeInfo] = useState({});
   const [activeTab, setActiveTab] = useState(`ingredients`);
-
-  let params = useParams();
 
   async function getRecipe() {
     const response = await fetch(

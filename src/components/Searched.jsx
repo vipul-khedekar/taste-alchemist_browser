@@ -1,13 +1,14 @@
 import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 
-import Card from "./Card";
 import { SearchedContainer } from "../styles/StyledSearch";
 
-function Searched() {
-  const [searchedList, setSearchList] = useState([]);
+import Card from "./Card";
 
+function Searched() {
   let params = useParams();
+
+  const [searchedList, setSearchList] = useState([]);
 
   async function getQueries(searchQuery) {
     const response = await fetch(

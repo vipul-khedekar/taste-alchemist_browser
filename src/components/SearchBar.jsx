@@ -5,8 +5,9 @@ import { BsSearch } from "react-icons/bs";
 import { SearchContainer, SearchIcon } from "../styles/StyledSearchBar";
 
 function SearchBar() {
-  const [searchQuery, setSearchQuery] = useState(``);
   const navigateTo = useNavigate();
+
+  const [searchQuery, setSearchQuery] = useState(``);
 
   function handleSubmit(e) {
     e.preventDefault();

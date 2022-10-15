@@ -7,6 +7,7 @@ import {
   Header,
   ScrollArea,
 } from "../styles/StyledTrending";
+
 import Card from "./Card";
 
 function Trending() {

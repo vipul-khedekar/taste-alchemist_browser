@@ -2,12 +2,13 @@ import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 
 import { CuisineContainer } from "../styles/StyledCuisine";
+
 import Card from "./Card";
 
 function Cuisine() {
-  const [cuisine, setCuisine] = useState([]);
-
   let params = useParams();
+
+  const [cuisine, setCuisine] = useState([]);
 
   async function getRecipes(cuisineType) {
     const response = await fetch(

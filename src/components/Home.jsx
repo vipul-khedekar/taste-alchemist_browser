@@ -1,6 +1,7 @@
-import Trending from "./Trending";
-import Specials from "./Specials";
 import { HomeContainer } from "../styles/StyledHome";
+
+import Specials from "./Specials";
+import Trending from "./Trending";
 
 function Home() {
   return (

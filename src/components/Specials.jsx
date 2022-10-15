@@ -7,6 +7,7 @@ import {
   Header,
   ScrollArea,
 } from "../styles/StyledSpecials";
+
 import Card from "./Card";
 
 function Specials() {
