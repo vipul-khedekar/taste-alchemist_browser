@@ -11,16 +11,21 @@ import {
   ScrollArea,
 } from "../styles/StyledSpecials";
 
+import TripleDots from "./loaders/TripleDots";
 import Card from "./Card";
 
 function Specials() {
   const [specialsList, setSpecialsList] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   const getSpecials = async () => {
+    setIsLoading(true);
+
     const cache = localStorage.getItem(`specials`);
 
     if (cache) {
       setSpecialsList(JSON.parse(localStorage.getItem(`specials`)));
+      setIsLoading(false);
     } else {
       const response = await fetch(
         `https://api.spoonacular.com/recipes/complexSearch?apiKey=${process.env.REACT_APP_API_KEY}&type=dessert&limit=10`,
@@ -31,6 +36,7 @@ function Specials() {
       localStorage.setItem(`specials`, JSON.stringify(data.results));
 
       setSpecialsList(data.results);
+      setIsLoading(false);
     }
   };
 
@@ -49,15 +55,24 @@ function Specials() {
         modules={[Autoplay]}
         autoplay={{ delay: 3500 }}
       >
-        {specialsList.map((recipe) => {
-          return (
-            <SwiperSlide key={recipe.id} style={{ width: "18rem" }}>
-              <Link to={`/recipe/${recipe.id}`}>
-                <Card recipe={recipe} />
-              </Link>
-            </SwiperSlide>
-          );
-        })}
+        {isLoading && <TripleDots />}
+
+        {specialsList ? (
+          specialsList.map((recipe) => {
+            return (
+              <SwiperSlide key={recipe.id} style={{ width: "18rem" }}>
+                <Link to={`/recipe/${recipe.id}`}>
+                  <Card recipe={recipe} />
+                </Link>
+              </SwiperSlide>
+            );
+          })
+        ) : (
+          <h4>
+            Whoops! Something went wrong while fetching data. Please try
+            again...
+          </h4>
+        )}
       </ScrollArea>
     </SpecialsContainer>
   );
