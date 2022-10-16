@@ -48,7 +48,7 @@ function Trending() {
       <ScrollArea
         slidesPerView="auto"
         modules={[Autoplay]}
-        autoplay={{ delay: 3000 }}
+        autoplay={{ delay: 3500 }}
       >
         {trendingList.map((recipe) => {
           return (

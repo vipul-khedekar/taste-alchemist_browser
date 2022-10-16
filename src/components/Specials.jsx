@@ -47,7 +47,7 @@ function Specials() {
       <ScrollArea
         slidesPerView="auto"
         modules={[Autoplay]}
-        autoplay={{ delay: 2000 }}
+        autoplay={{ delay: 3500 }}
       >
         {specialsList.map((recipe) => {
           return (
