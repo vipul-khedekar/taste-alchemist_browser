@@ -12,20 +12,15 @@ export const Header = styled.div`
   align-items: center;
 
   p {
+    background: linear-gradient(
+      105deg,
+      var(--darkPurple),
+      var(--semiDarkPurple)
+    );
     font-size: 1.1rem;
     font-weight: bold;
-  }
-
-  div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    p {
-      margin-right: -0.3rem;
-      font-size: 0.75rem;
-      font-weight: 400;
-    }
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 `;
 
@@ -37,5 +32,4 @@ export const ScrollArea = styled(Swiper)`
   align-items: center;
   gap: 2rem;
   padding: 3px;
-  /* overflow-x: scroll; */
 `;
