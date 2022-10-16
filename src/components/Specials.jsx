@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { AiOutlineDoubleRight } from "react-icons/ai";
+import { SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper";
+import "swiper/css";
+import "swiper/css/autoplay";
 
 import {
   SpecialsContainer,
@@ -39,19 +42,20 @@ function Specials() {
     <SpecialsContainer>
       <Header>
         <p>Today's Special, try out now!</p>
-
-        <div>
-          <p>Scroll</p>
-          <AiOutlineDoubleRight style={{ fontSize: `1.8rem` }} />
-        </div>
       </Header>
 
-      <ScrollArea>
+      <ScrollArea
+        slidesPerView="auto"
+        modules={[Autoplay]}
+        autoplay={{ delay: 2000 }}
+      >
         {specialsList.map((recipe) => {
           return (
-            <Link key={recipe.id} to={`/recipe/${recipe.id}`}>
-              <Card recipe={recipe} />
-            </Link>
+            <SwiperSlide key={recipe.id} style={{ width: "18rem" }}>
+              <Link to={`/recipe/${recipe.id}`}>
+                <Card recipe={recipe} />
+              </Link>
+            </SwiperSlide>
           );
         })}
       </ScrollArea>

@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 
 export const CardContainer = styled(motion.article)`
+  width: 17rem;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -30,12 +31,16 @@ export const CardContainer = styled(motion.article)`
     font-size: 0.85rem;
     font-weight: bold;
     text-align: center;
+
+    &:hover {
+      filter: brightness(10%);
+    }
   }
 `;
 
 export const Gradient = styled.div`
   height: 100%;
-  width: 100%;
+  width: auto;
   background: linear-gradient(to bottom, #ffffff00, #00000050);
   border-radius: 2rem;
   position: absolute;
