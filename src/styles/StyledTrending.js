@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Swiper } from "swiper/react";
 
 export const TrendingContainer = styled.section`
   padding: 1.5rem;
@@ -28,12 +29,11 @@ export const Header = styled.div`
   }
 `;
 
-export const ScrollArea = styled.section`
+export const ScrollArea = styled(Swiper)`
   height: 13.75rem;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 2rem;
   padding: 3px;
-  overflow-x: scroll;
 `;
