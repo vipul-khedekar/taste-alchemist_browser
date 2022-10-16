@@ -15,7 +15,7 @@ function Card(props) {
 
       <Gradient />
 
-      <img src={image} alt={title} />
+      <img src={image} loading="lazy" alt={title} />
     </CardContainer>
   );
 }
