@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { AiOutlineDoubleRight } from "react-icons/ai";
 import { SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
 import "swiper/css";
@@ -54,7 +53,7 @@ function Trending() {
       <ScrollArea
         slidesPerView="auto"
         modules={[Autoplay]}
-        autoplay={{ delay: 3500 }}
+        autoplay={{ delay: 2750 }}
       >
         {isLoading && <TripleDots />}
 

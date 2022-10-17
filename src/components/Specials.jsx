@@ -53,7 +53,7 @@ function Specials() {
       <ScrollArea
         slidesPerView="auto"
         modules={[Autoplay]}
-        autoplay={{ delay: 3500 }}
+        autoplay={{ delay: 2750 }}
       >
         {isLoading && <TripleDots />}
 
