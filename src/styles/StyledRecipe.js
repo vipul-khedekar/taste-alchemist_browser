@@ -2,11 +2,13 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 
 export const RecipeContainer = styled.article`
+  height: 59vh;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   gap: 4rem;
   margin: 3rem 2rem;
+  overflow-y: scroll;
 `;
 
 export const LeftPanel = styled(motion.section)`
