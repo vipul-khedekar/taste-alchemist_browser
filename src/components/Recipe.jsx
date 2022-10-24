@@ -10,13 +10,18 @@ import {
   Body,
 } from "../styles/StyledRecipe";
 
+import TripleDots from "./loaders/TripleDots";
+
 function Recipe() {
   let params = useParams();
 
   const [recipeInfo, setRecipeInfo] = useState({});
   const [activeTab, setActiveTab] = useState(`ingredients`);
+  const [isLoading, setIsLoading] = useState(true);
 
   const getRecipe = async () => {
+    setIsLoading(true);
+
     const response = await fetch(
       `https://api.spoonacular.com/recipes/${params.id}/information/?apiKey=${process.env.REACT_APP_API_KEY}`,
       { mode: `cors` }
@@ -24,6 +29,9 @@ function Recipe() {
     const data = await response.json();
 
     setRecipeInfo(data);
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 1200);
   };
 
   const makeInstructionsActive = () => {
@@ -40,64 +48,70 @@ function Recipe() {
 
   return (
     <RecipeContainer>
-      <LeftPanel
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        transition={{ duration: 0.2 }}
-      >
-        <h3>{recipeInfo.title}</h3>
+      {isLoading && <TripleDots />}
 
-        <img src={recipeInfo.image} alt={recipeInfo.title} />
+      {!isLoading && (
+        <LeftPanel
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.2 }}
+        >
+          <h3>{recipeInfo.title}</h3>
 
-        <Properties>
-          {recipeInfo.diets &&
-            recipeInfo.diets.map((diet) => {
-              return <p>{diet}</p>;
-            })}
-        </Properties>
+          <img src={recipeInfo.image} alt={recipeInfo.title} />
 
-        <h4>Summary:</h4>
-        <span dangerouslySetInnerHTML={{ __html: recipeInfo.summary }}></span>
-      </LeftPanel>
+          <Properties>
+            {recipeInfo.diets &&
+              recipeInfo.diets.map((diet) => {
+                return <p>{diet}</p>;
+              })}
+          </Properties>
 
-      <RightPanel
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        transition={{ duration: 0.5 }}
-      >
-        <Buttons>
-          <button
-            className={activeTab === `ingredients` ? `active` : ``}
-            onClick={() => makeIngredientsActive()}
-          >
-            Ingredients
-          </button>
+          <h4>Summary:</h4>
+          <span dangerouslySetInnerHTML={{ __html: recipeInfo.summary }}></span>
+        </LeftPanel>
+      )}
 
-          <button
-            className={activeTab === `instructions` ? `active` : ``}
-            onClick={() => makeInstructionsActive()}
-          >
-            Instructions
-          </button>
-        </Buttons>
+      {!isLoading && (
+        <RightPanel
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          <Buttons>
+            <button
+              className={activeTab === `ingredients` ? `active` : ``}
+              onClick={() => makeIngredientsActive()}
+            >
+              Ingredients
+            </button>
 
-        <Body>
-          {activeTab === `ingredients` ? (
-            <ul>
-              {recipeInfo.extendedIngredients &&
-                recipeInfo.extendedIngredients.map((ingredient) => {
-                  return <li key={ingredient.id}>{ingredient.original}</li>;
-                })}
-            </ul>
-          ) : (
-            <p
-              dangerouslySetInnerHTML={{ __html: recipeInfo.instructions }}
-            ></p>
-          )}
-        </Body>
-      </RightPanel>
+            <button
+              className={activeTab === `instructions` ? `active` : ``}
+              onClick={() => makeInstructionsActive()}
+            >
+              Instructions
+            </button>
+          </Buttons>
+
+          <Body>
+            {activeTab === `ingredients` ? (
+              <ul>
+                {recipeInfo.extendedIngredients &&
+                  recipeInfo.extendedIngredients.map((ingredient) => {
+                    return <li key={ingredient.id}>{ingredient.original}</li>;
+                  })}
+              </ul>
+            ) : (
+              <p
+                dangerouslySetInnerHTML={{ __html: recipeInfo.instructions }}
+              ></p>
+            )}
+          </Body>
+        </RightPanel>
+      )}
     </RecipeContainer>
   );
 }
