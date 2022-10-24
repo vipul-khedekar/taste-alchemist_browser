@@ -9,6 +9,7 @@ function Header() {
     <Link to={`/`} style={{ textDecoration: `none` }}>
       <HeaderContainer>
         <img src={Logo} alt="logo" />
+
         <p>TasteAlchemist</p>
       </HeaderContainer>
     </Link>

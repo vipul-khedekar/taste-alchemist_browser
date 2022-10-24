@@ -9,7 +9,7 @@ export const RecipeContainer = styled.article`
   margin: 3rem 2rem;
 `;
 
-export const LeftPanel = styled(motion.div)`
+export const LeftPanel = styled(motion.section)`
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -55,7 +55,7 @@ export const Properties = styled.div`
   }
 `;
 
-export const RightPanel = styled(motion.div)`
+export const RightPanel = styled(motion.section)`
   display: flex;
   flex: 1;
   flex-direction: column;

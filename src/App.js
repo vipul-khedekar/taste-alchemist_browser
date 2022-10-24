@@ -7,17 +7,20 @@ import Header from "./components/Header";
 
 function App() {
   return (
-    <motion.div
+    <motion.article
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
       <Header />
+
       <SearchBar />
+
       <Options />
+
       <Pages />
-    </motion.div>
+    </motion.article>
   );
 }
 

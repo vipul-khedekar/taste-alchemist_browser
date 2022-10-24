@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 
-export const CuisineContainer = styled(motion.div)`
+export const CuisineContainer = styled(motion.main)`
   height: 60vh;
   width: 100%;
   display: flex;

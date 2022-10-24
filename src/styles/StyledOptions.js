@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
-export const OptionsContainer = styled.ul`
+export const OptionsContainer = styled.nav`
   display: flex;
   justify-content: center;
   align-items: center;
