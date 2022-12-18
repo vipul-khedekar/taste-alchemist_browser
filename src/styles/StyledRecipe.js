@@ -8,7 +8,7 @@ export const RecipeContainer = styled.article`
   align-items: flex-start;
   gap: 4rem;
   margin: 3rem 2rem;
-  overflow-y: scroll;
+  overflow-y: auto;
 `;
 
 export const LeftPanel = styled(motion.section)`

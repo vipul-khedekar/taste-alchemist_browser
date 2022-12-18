@@ -10,5 +10,5 @@ export const SearchedContainer = styled(motion.main)`
   align-items: center;
   gap: 2rem;
   margin-top: 3rem;
-  overflow-y: scroll;
+  overflow-y: auto;
 `;
