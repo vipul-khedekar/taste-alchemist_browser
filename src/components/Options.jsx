@@ -16,7 +16,7 @@ import {
 function Options() {
   return (
     <OptionsContainer>
-      <NavLinkStyled to={"/"}>
+      <NavLinkStyled end to={"/"}>
         <FaHome style={OptionsIcon} />
         <p style={OptionsText}>Home</p>
       </NavLinkStyled>
