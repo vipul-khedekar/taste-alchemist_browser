@@ -1,3 +1,3 @@
 # Taste Alchemist - A Recipe Browser
 
-A web app to search and browse recipes by categories from a collection provided by the API. Shows ingredients and steps in a very concise a consolidated manner. The app has a responsive design for desktop 16:9 and tablet-type screen sizes.
+A web app to search and browse recipes by categories. Presents recipe list in a scrollable consolidated manner. The ingredients and steps shown are very concise. Crafted with tasteful design, keeping simplicity and user experience in mind.
