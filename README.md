@@ -68,7 +68,7 @@ _(Source: Imagination. I just named them whatever I wanted, because why not.)_
 
 ## Credits for Assets
 
-_Thank you very much for the assets_
+_Thank you very much_
 
 | Assets  | Name        | Link                                      |
 | ------- | ----------- | ----------------------------------------- |
