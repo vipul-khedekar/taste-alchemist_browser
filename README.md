@@ -5,7 +5,7 @@ A web app to search and browse recipes by categories. Presents recipe list in a 
 
 ## Major Features
 
-The core functionalities of the app:
+_The core functionalities of the app:_
 
 - **On the landing page, the user is greeted with a 'Today's Specials' and a 'Trending' recipe list.**
 - **Wrote reusable components.**
@@ -25,3 +25,30 @@ The core functionalities of the app:
 - **Flexible scrollable area if the list overflows.**
 - **Responsive design.**
   - Switching smoothly between 16:9 desktop and 3:4 tablet screen sizes.
+
+## Quality of Life and Minor Design Features
+
+_Little details that cumulatively add to a great user experience:_
+
+- **Tasteful duo color combination of green and purple.**
+- **Filter buttons are made using a linear gradient of two tones of purple to give a glassy look.**
+- **Easier navigation.**
+  - Filter button will show a white border representing the user's selected category.
+- **Inputted keywords auto-blanks upon search completion.**
+- **Animated loader.**
+  - Appears when the app is in the process of data fetching.
+  - Disappears as soon as data is ready to be displayed to the user.
+- **Auto-scrolling slider.**
+  - For 'Today's specials' and 'Trending' lists.
+  - Slides at every small interval.
+  - Loops back to the first one after reaching the end.
+  - The user can interrupt the auto-sliding and can drag it instead.
+- **Recipe Details page.**
+  - Name, image, tags, and summary on the left column.
+  - Ingredients and Instructions on the right column.
+  - Easy to switch tabs for alternating between Ingredients and Instructions.
+- **Clicking on the logo navigates the user back to the home page.**
+- **Custom thin scrollbar design matching the theme.**
+- **Hovering over the recipe card will glow it.**
+- **Custom favicon.**
+- **Proper title of the web app.**
