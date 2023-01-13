@@ -8,7 +8,7 @@
 
 **Tech Stack: ReactJS, Styled Components, React Router, Javascript, SwiperJS, CSS, HTML, and React Icons.**
 
-## Major Features
+## 👉 Major Features
 
 _The core functionalities of the app:_
 
@@ -31,7 +31,7 @@ _The core functionalities of the app:_
 - **Responsive design.**
   - Switching smoothly between 16:9 desktop and 3:4 tablet screen sizes.
 
-## Quality of Life and Design Features
+## 👉 Quality of Life and Design Features
 
 _Little details that cumulatively add to a great user experience:_
 
@@ -58,9 +58,9 @@ _Little details that cumulatively add to a great user experience:_
 - **Custom favicon.**
 - **Proper title of the web app.**
 
-## Colors Used
+## 👉 Colors Used
 
-_(Source: Imagination. I just named them whatever I wanted, because why not.)_
+_(Source: Imagination. I just named them whatever I wanted, because why not.)_ 🤷
 
 | Colors           | Hex Code |
 | ---------------- | -------- |
@@ -71,9 +71,9 @@ _(Source: Imagination. I just named them whatever I wanted, because why not.)_
 | Silver           | c9c9c9   |
 | White            | #ffffff  |
 
-## Credits for Assets
+## 👉 Credits for Assets
 
-_Thank you very much_
+_Thank you very much_ 🙂
 
 | Assets  | Name        | Link                                      |
 | ------- | ----------- | ----------------------------------------- |
@@ -83,7 +83,7 @@ _Thank you very much_
 | Loaders | Sam Herbert | https://github.com/SamHerbert/SVG-Loaders |
 | API     | Spoonacular | https://spoonacular.com/food-api          |
 
-## More Screenshots
+## 👉 More Screenshots
 
 <div align="center">
     <img width="70%" height="70%" src="https://firebasestorage.googleapis.com/v0/b/github-profile-v1.appspot.com/o/projects%2Ftaste-alchemist%2FScreenshot%202022-12-19%20at%2021-34-57%20Taste%20Alchemist%20-%20A%20recipe%20browser%20tool%20with%20cooking%20instructions%20%26%20ingredients%20list.webp?alt=media&token=466ff54b-8a65-40bb-ae31-8ae2d05eb964" alt="filter-categories">
