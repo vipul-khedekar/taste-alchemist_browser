@@ -65,3 +65,15 @@ _(Source: Imagination. I just named them whatever I wanted, because why not.)_
 | Dark Purple      | #2e1831  |
 | Silver           | c9c9c9   |
 | White            | #ffffff  |
+
+## Credits for Assets
+
+_Thank you very much for the assets_
+
+| Assets  | Name        | Link                                      |
+| ------- | ----------- | ----------------------------------------- |
+| Favicon | Icons8      | https://icons8.com/                       |
+| Logo    | Icons8      | https://icons8.com/                       |
+| Fonts   | Google      | https://fonts.google.com/                 |
+| Loaders | Sam Herbert | https://github.com/SamHerbert/SVG-Loaders |
+| API     | Spoonacular | https://spoonacular.com/food-api          |
