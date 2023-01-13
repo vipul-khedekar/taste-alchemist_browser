@@ -1,7 +1,7 @@
 # Taste Alchemist - A Recipe Browser
 
 <div align="center">
-    <img width="85%" height="85%" src="https://firebasestorage.googleapis.com/v0/b/github-profile-v1.appspot.com/o/projects%2Ftaste-alchemist%2FScreenshot%202022-12-19%20at%2021-34-18%20Taste%20Alchemist%20-%20A%20recipe%20browser%20tool%20with%20cooking%20instructions%20%26%20ingredients%20list.webp?alt=media&token=adf57fb3-e847-4821-9e20-c6a674bd06f3" alt="home-page">
+    <img width="90%" height="90%" src="https://firebasestorage.googleapis.com/v0/b/github-profile-v1.appspot.com/o/projects%2Ftaste-alchemist%2FScreenshot%202022-12-19%20at%2021-34-18%20Taste%20Alchemist%20-%20A%20recipe%20browser%20tool%20with%20cooking%20instructions%20%26%20ingredients%20list.webp?alt=media&token=adf57fb3-e847-4821-9e20-c6a674bd06f3" alt="home-page">
 </div>
 
 **A web app to search and browse recipes by categories. Presents recipe list in a scrollable consolidated manner. The ingredients and steps shown are very concise. Tasteful design, keeping simplicity and user experience in mind.**
@@ -84,29 +84,29 @@ _Thank you very much_
 ## More Screenshots
 
 <div align="center">
-    <img width="60%" height="60%" src="https://firebasestorage.googleapis.com/v0/b/github-profile-v1.appspot.com/o/projects%2Ftaste-alchemist%2FScreenshot%202022-12-19%20at%2021-34-57%20Taste%20Alchemist%20-%20A%20recipe%20browser%20tool%20with%20cooking%20instructions%20%26%20ingredients%20list.webp?alt=media&token=466ff54b-8a65-40bb-ae31-8ae2d05eb964" alt="filter-categories">
+    <img width="70%" height="70%" src="https://firebasestorage.googleapis.com/v0/b/github-profile-v1.appspot.com/o/projects%2Ftaste-alchemist%2FScreenshot%202022-12-19%20at%2021-34-57%20Taste%20Alchemist%20-%20A%20recipe%20browser%20tool%20with%20cooking%20instructions%20%26%20ingredients%20list.webp?alt=media&token=466ff54b-8a65-40bb-ae31-8ae2d05eb964" alt="filter-categories">
 </div>
 
 <div align="center">
-    <img width="60%" height="60%" src="https://firebasestorage.googleapis.com/v0/b/github-profile-v1.appspot.com/o/projects%2Ftaste-alchemist%2FScreenshot%202022-12-19%20at%2021-35-49%20Taste%20Alchemist%20-%20A%20recipe%20browser%20tool%20with%20cooking%20instructions%20%26%20ingredients%20list.webp?alt=media&token=d65221d3-9174-4749-8712-b372e312d37c" alt="slider">
+    <img width="70%" height="70%" src="https://firebasestorage.googleapis.com/v0/b/github-profile-v1.appspot.com/o/projects%2Ftaste-alchemist%2FScreenshot%202022-12-19%20at%2021-35-49%20Taste%20Alchemist%20-%20A%20recipe%20browser%20tool%20with%20cooking%20instructions%20%26%20ingredients%20list.webp?alt=media&token=d65221d3-9174-4749-8712-b372e312d37c" alt="slider">
 </div>
 
 <div align="center">
-    <img width="60%" height="60%" src="https://firebasestorage.googleapis.com/v0/b/github-profile-v1.appspot.com/o/projects%2Ftaste-alchemist%2FScreenshot%202022-12-19%20at%2021-36-42%20Taste%20Alchemist%20-%20A%20recipe%20browser%20tool%20with%20cooking%20instructions%20%26%20ingredients%20list.webp?alt=media&token=6888452c-f1b1-4408-9d82-f4b0309892e4" alt="search-bar">
+    <img width="70%" height="70%" src="https://firebasestorage.googleapis.com/v0/b/github-profile-v1.appspot.com/o/projects%2Ftaste-alchemist%2FScreenshot%202022-12-19%20at%2021-36-42%20Taste%20Alchemist%20-%20A%20recipe%20browser%20tool%20with%20cooking%20instructions%20%26%20ingredients%20list.webp?alt=media&token=6888452c-f1b1-4408-9d82-f4b0309892e4" alt="search-bar">
 </div>
 
 <div align="center">
-    <img width="60%" height="60%" src="https://firebasestorage.googleapis.com/v0/b/github-profile-v1.appspot.com/o/projects%2Ftaste-alchemist%2FScreenshot%202022-12-19%20at%2021-37-20%20Taste%20Alchemist%20-%20A%20recipe%20browser%20tool%20with%20cooking%20instructions%20%26%20ingredients%20list.webp?alt=media&token=f1fb5644-4b18-4a6a-adea-633c9038e4aa" alt="overflow">
+    <img width="70%" height="70%" src="https://firebasestorage.googleapis.com/v0/b/github-profile-v1.appspot.com/o/projects%2Ftaste-alchemist%2FScreenshot%202022-12-19%20at%2021-37-20%20Taste%20Alchemist%20-%20A%20recipe%20browser%20tool%20with%20cooking%20instructions%20%26%20ingredients%20list.webp?alt=media&token=f1fb5644-4b18-4a6a-adea-633c9038e4aa" alt="overflow">
 </div>
 
 <div align="center">
-    <img width="60%" height="60%" src="https://firebasestorage.googleapis.com/v0/b/github-profile-v1.appspot.com/o/projects%2Ftaste-alchemist%2FScreenshot%202022-12-19%20at%2021-38-08%20Taste%20Alchemist%20-%20A%20recipe%20browser%20tool%20with%20cooking%20instructions%20%26%20ingredients%20list.webp?alt=media&token=ccd676f5-abea-4031-aa54-47e344a59065" alt="responsive-tablet">
+    <img width="70%" height="70%" src="https://firebasestorage.googleapis.com/v0/b/github-profile-v1.appspot.com/o/projects%2Ftaste-alchemist%2FScreenshot%202022-12-19%20at%2021-38-08%20Taste%20Alchemist%20-%20A%20recipe%20browser%20tool%20with%20cooking%20instructions%20%26%20ingredients%20list.webp?alt=media&token=ccd676f5-abea-4031-aa54-47e344a59065" alt="responsive-tablet">
 </div>
 
 <div align="center">
-    <img width="60%" height="60%" src="https://firebasestorage.googleapis.com/v0/b/github-profile-v1.appspot.com/o/projects%2Ftaste-alchemist%2FScreenshot%202022-12-19%20at%2021-39-57%20Taste%20Alchemist%20-%20A%20recipe%20browser%20tool%20with%20cooking%20instructions%20%26%20ingredients%20list.webp?alt=media&token=59942c31-9d74-4aad-9cc2-5189f11dda53" alt="details">
+    <img width="70%" height="70%" src="https://firebasestorage.googleapis.com/v0/b/github-profile-v1.appspot.com/o/projects%2Ftaste-alchemist%2FScreenshot%202022-12-19%20at%2021-39-57%20Taste%20Alchemist%20-%20A%20recipe%20browser%20tool%20with%20cooking%20instructions%20%26%20ingredients%20list.webp?alt=media&token=59942c31-9d74-4aad-9cc2-5189f11dda53" alt="details">
 </div>
 
 <div align="center">
-    <img width="60%" height="60%" src="https://firebasestorage.googleapis.com/v0/b/github-profile-v1.appspot.com/o/projects%2Ftaste-alchemist%2FScreenshot%202022-12-19%20at%2021-40-08%20Taste%20Alchemist%20-%20A%20recipe%20browser%20tool%20with%20cooking%20instructions%20%26%20ingredients%20list.webp?alt=media&token=66c3f968-783c-4d03-9597-9ff857913f8f" alt="tabs">
+    <img width="70%" height="70%" src="https://firebasestorage.googleapis.com/v0/b/github-profile-v1.appspot.com/o/projects%2Ftaste-alchemist%2FScreenshot%202022-12-19%20at%2021-40-08%20Taste%20Alchemist%20-%20A%20recipe%20browser%20tool%20with%20cooking%20instructions%20%26%20ingredients%20list.webp?alt=media&token=66c3f968-783c-4d03-9597-9ff857913f8f" alt="tabs">
 </div>
