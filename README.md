@@ -57,7 +57,7 @@ _Little details that cumulatively add to a great user experience:_
 
 _(Source: Imagination. I just named them whatever I wanted, because why not.)_
 
-| Color            | Hex Code |
+| Colors           | Hex Code |
 | ---------------- | -------- |
 | Light Green      | #b1e6cc  |
 | Dark Green       | #73d673  |
