@@ -52,3 +52,16 @@ _Little details that cumulatively add to a great user experience:_
 - **Hovering over the recipe card will glow it.**
 - **Custom favicon.**
 - **Proper title of the web app.**
+
+## Colors Used
+
+_(Source: Imagination. I just named them whatever I wanted, because why not.)_
+
+| Color            | Hex Code |
+| ---------------- | -------- |
+| Light Green      | #b1e6cc  |
+| Dark Green       | #73d673  |
+| Semi Dark Purple | #00b48a  |
+| Dark Purple      | #2e1831  |
+| Silver           | c9c9c9   |
+| White            | #ffffff  |
