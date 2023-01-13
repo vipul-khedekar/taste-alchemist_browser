@@ -7,21 +7,21 @@ A web app to search and browse recipes by categories. Presents recipe list in a 
 
 The core functionalities of the app:
 
-- On the landing page, the user is greeted with a 'Today's Specials' and a 'Trending' recipe list.
-- Wrote reusable components.
+- **On the landing page, the user is greeted with a 'Today's Specials' and a 'Trending' recipe list.**
+- **Wrote reusable components.**
   - For display grid and recipe cards.
   - Saved the development time by removing the need to write the same code for each item.
-- Fetched data is stored in local storage.
+- **Fetched data is stored in local storage.**
   - Of 'Today's Special' and 'Trending' lists.
   - Because they bring back the same response data.
   - To reduce the load time of future visits.
   - Saves the wastage of shooting GET requests every time.
-- Ability to search for recipes using keywords.
-- Ability to filter by four popular categories.
+- **Ability to search for recipes using keywords.**
+- **Ability to filter by four popular categories.**
   - Chinese, Italian, Indian and American.
-- Clicking on a recipe opens its details page.
+- **Clicking on a recipe opens its details page.**
   - References it from API end-point by its ID passed through URL params.
   - Details page includes ingredients, instructions, and relevant dietary tags of the finished product.
-- Flexible scrollable area if the list overflows.
-- Responsive design.
+- **Flexible scrollable area if the list overflows.**
+- **Responsive design.**
   - Switching smoothly between 16:9 desktop and 3:4 tablet screen sizes.
