@@ -6,6 +6,8 @@
 
 **A web app to search and browse recipes by categories. Presents recipe list in a scrollable consolidated manner. The ingredients and steps shown are very concise. Tasteful design, keeping simplicity and user experience in mind.**
 
+**Tech Stack: ReactJS, Styled Components, React Router, Javascript, SwiperJS, CSS, HTML, and React Icons.**
+
 ## Major Features
 
 _The core functionalities of the app:_
@@ -29,7 +31,7 @@ _The core functionalities of the app:_
 - **Responsive design.**
   - Switching smoothly between 16:9 desktop and 3:4 tablet screen sizes.
 
-## Quality of Life and Minor Design Features
+## Quality of Life and Design Features
 
 _Little details that cumulatively add to a great user experience:_
 
