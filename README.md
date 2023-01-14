@@ -68,8 +68,8 @@ _(Source: Imagination. I just named them whatever I wanted, because why not.)_ ð
 | Dark Green       | #73d673  |
 | Semi Dark Purple | #00b48a  |
 | Dark Purple      | #2e1831  |
-| Silver           | c9c9c9   |
 | White            | #ffffff  |
+| Silver           | #c9c9c9  |
 
 ## ðŸ‘‰ Credits for Assets
 
